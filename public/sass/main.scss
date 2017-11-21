@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import "bourbon/bourbon";
+
+// Our variables
+$base-font-family: sans-serif;
+$base-font-size:   16px;
+$base-line-height: 1.5;
+$header-font-family: cursive;
+$small-font-size:  $base-font-size * 0.875;
+
+$black: #232323;
+
+$brand-color: lightgreen;
+
+$button-size : 1.25rem; 
+$transition: .3s;
+
+// Width of the content area
+$content-width:    	800px;
+
+$on-palm:          	600px;
+$on-laptop:        	800px;
+$large-phone:		481px;
+$tablet:			768px;
+$laptop:			1030px;
+$high-res:			1440px;
+
+@import
+        "mixins",
+        "base",
+        "layout"
+;
