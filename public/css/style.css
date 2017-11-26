@@ -56,11 +56,11 @@ h2 {
  * Links
  */
 a {
-  color: lightgreen;
+  color: #228f1d;
   text-decoration: none;
 }
 a:visited {
-  color: #4ee44e;
+  color: #134f10;
 }
 a:hover {
   text-decoration: underline;
@@ -70,6 +70,7 @@ a:hover {
  * Wrapper
  */
 .section {
+  width: 100%;
   padding: 5rem 0;
   margin: 0;
   background-color: white;
@@ -91,4 +92,57 @@ a:hover {
   .container p {
     font-size: 1.15rem;
   }
+}
+
+.section.draftboard {
+  padding: 0;
+}
+.section.draftboard .row {
+  width: 100%;
+  clear: both;
+}
+.section.draftboard .row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.section.draftboard .row.header {
+  position: relative;
+  box-shadow: 0px 0.25rem 0.2rem -0.2rem #232323;
+  z-index: 1;
+}
+.section.draftboard .row.header .object {
+  border-left: none;
+  height: auto;
+}
+.section.draftboard .row.header .object:hover {
+  background-color: white;
+}
+.section.draftboard .object {
+  position: relative;
+  box-sizing: border-box;
+  background-color: white;
+  border-left: 0.5rem solid #228f1d;
+  float: left;
+}
+.section.draftboard .object.twelve {
+  width: 8.33333%;
+  height: 5.375rem;
+  padding: 1rem 1%;
+  font-size: 0.75rem;
+}
+.section.draftboard .object:hover {
+  background-color: #f2f2f2;
+}
+.section.draftboard .object span {
+  display: block;
+  float: none;
+}
+.section.draftboard .object span.bold {
+  font-weight: bold;
+}
+.section.draftboard .object span.fixed {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
 }
